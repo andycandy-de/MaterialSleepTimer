@@ -1,0 +1,29 @@
+<div class="overlay" (click)="onClick($event)">
+    <div class="overlay-content-wrapper">
+        <div class="center-wrapper">
+            <div class="options-wrapper" [class.expanded]="expanded">
+                <div class="options-seperator">
+                    <div class="options-side">
+                        <button mat-raised-button color="primary" *ngFor="let time of config.overlayPlusTimes" (click)="onPlus(time)">+{{ time }}m</button>
+                    </div>
+                    <div class="options-side">
+                        <button mat-raised-button [disabled]="lastTimeout" color="accent" (click)="onStop($event)">{{ 'PAGES.OVERLAY.STOP' | translate }}</button>
+                        <button mat-raised-button [disabled]="lastTimeout" color="accent" (click)="onSleep($event)">{{ 'PAGES.OVERLAY.SLEEP' | translate }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center-wrapper" style="pointer-events: none">
+            <div class="circle-wrapper" >
+                <app-timer-circle
+                    size="200"
+                    color="accent"
+                    [active]="model.active"
+                    [countdownTime]="countdownTime"
+                    [endTime]="model.endTime"
+                    ></app-timer-circle>
+            </div>
+        </div>
+    </div>    
+</div>

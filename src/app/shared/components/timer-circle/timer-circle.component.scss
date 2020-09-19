@@ -1,0 +1,82 @@
+@import '../../../scss/var';
+
+div.timer-wrapper {
+    position: relative;
+    opacity: 0.6;
+    div.circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px dotted #aaaaaa;
+        border-radius: 50%;
+        box-sizing: border-box;
+        opacity: 0.7;
+    }
+    div.labels-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div.time-labels {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          padding: 3px;
+          margin: 0;
+        }
+        div.fix-height {
+          height: 22px;
+          min-width: 10px;
+        }
+        p {
+          padding: 0;
+          margin: 0;
+          margin-top: -8px;
+        }
+      }
+    }
+}
+div.timer-wrapper.active {
+  opacity: 1;
+  
+  div.circle {
+    animation: anim-spinning 120s infinite, anim-opacity 6s infinite;
+  }
+  div.circle.primary {
+    border-color: $primary-color;
+  }
+  div.circle.accent {
+    border-color: $accent-color;
+  }
+}
+
+@keyframes anim-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-opacity {
+  0% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  55% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

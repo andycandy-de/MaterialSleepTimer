@@ -1,0 +1,49 @@
+<mat-grid-list cols="4" rowHeight="50px">
+  <mat-grid-tile 
+      colspan="3"
+      rowspan="1">
+      <mat-slider #timeSlider class="time-slider"
+          [displayWith]="format"
+          [step]="config.editSliderStepTime"
+          [min]="config.editSliderMinCountdownTime"
+          [max]="config.editSliderMaxCountdownTime"
+          [(ngModel)]="value"
+          (input)="value=timeSlider.value"
+          ></mat-slider>
+  </mat-grid-tile>
+  <mat-grid-tile 
+      colspan="1"
+      rowspan="1">
+      <div class="mat-typography center-wrapper">
+        <p class="time">{{ format(value) }}</p>
+      </div>
+  </mat-grid-tile>
+  <mat-grid-tile *ngFor="let n of config.editCountdownTimes"
+      colspan="1"
+      rowspan="1">
+      <button mat-raised-button (click)="value=n">{{ format(n) }}</button>
+  </mat-grid-tile>
+  <mat-grid-tile 
+      colspan="1"
+      rowspan="1">
+    <div class="left-alignment">
+      <button mat-icon-button (click)="onSettings($event)" aria-label="Settings" >
+        <mat-icon>settings</mat-icon>
+      </button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile 
+      colspan="1"
+      rowspan="1">
+  </mat-grid-tile>
+  <mat-grid-tile 
+      colspan="1"
+      rowspan="1">
+    <button mat-raised-button (click)="onBack($event)" color="primary">{{ 'PAGES.EDIT.BACK' | translate }}</button>
+  </mat-grid-tile>
+  <mat-grid-tile 
+      colspan="1"
+      rowspan="1">
+    <button mat-raised-button (click)="onStart($event)" color="accent">{{ 'PAGES.EDIT.START' | translate }}</button>
+  </mat-grid-tile>
+</mat-grid-list>

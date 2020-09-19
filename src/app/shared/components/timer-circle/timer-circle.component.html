@@ -1,0 +1,24 @@
+<div class="timer-wrapper" [class.active]="active" style.width="{{size}}px" style.height="{{size}}px">
+  <mat-progress-spinner [value]="progress" [diameter]="size" [color]="color"></mat-progress-spinner>
+  <div class="circle"
+    style.width="{{size - 2 * offset}}px"
+    style.height="{{size - 2 * offset}}px"
+    style.border-width="{{border_size}}px"
+    style.top="{{offset}}px"
+    style.left="{{offset}}px"
+    [class.accent]="isPrimary()"
+    [class.primary]="isAccent()"
+    ></div>
+  <div class="labels-wrapper"
+    style.width="{{size}}px"
+    style.height="{{size}}px"
+  >
+    <div class="time-labels mat-typography">
+      <div class="fix-height"></div>
+      <h1>{{ formatTime(currentTime) }}</h1>
+      <div class="fix-height">
+        <p>{{ formatTime(countdownTime) }}</p>
+      </div>
+    </div>
+  </div>
+</div>

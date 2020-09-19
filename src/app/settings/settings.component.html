@@ -1,0 +1,125 @@
+<div class="site">
+    <div class="content">
+        <mat-grid-list cols="2" rowHeight="80px">
+            <mat-grid-tile 
+                colspan="2"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.SHUTDOWN_COMMAND' | translate }}</mat-label>
+                    <input matInput [(ngModel)]="shutdownCommand">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.DEFAULT_COUNTDOWN_TIME' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="defaultCountdownTime">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.OVERLAY_TIME' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="overlayTime">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.OVERLAY_PLUS_TIME_1' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="overlayPlusTime1">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.OVERLAY_PLUS_TIME_2' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="overlayPlusTime2">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_COUNTDOWN_TIME_1' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="editCountdownTime1">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_COUNTDOWN_TIME_2' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="editCountdownTime2">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_COUNTDOWN_TIME_3' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="editCountdownTime3">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_COUNTDOWN_TIME_4' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="editCountdownTime4">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_SLIDER_MIN' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="editSliderMinCountdownTime">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_SLIDER_MAX' | translate }}</mat-label>
+                    <input matInput type="number" min="2" [(ngModel)]="editSliderMaxCountdownTime">
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+                <mat-form-field class="full-width">
+                    <mat-label>{{ 'PAGES.SETTINGS.EDIT_SLIDER_STEP' | translate }}</mat-label>
+                    <input matInput type="number" min="1" [(ngModel)]="editSliderStepTime">
+                </mat-form-field>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+    <div class="bottom">
+        <mat-grid-list cols="6" rowHeight="50px">
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+            <button mat-raised-button (click)="onReset($event)">{{ 'PAGES.SETTINGS.RESET' | translate }}</button>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="1"
+                rowspan="1">
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="2"
+                rowspan="1">
+            <button mat-raised-button (click)="onCloseWithoutSave($event)" color="primary">{{ 'PAGES.SETTINGS.CLOSE_BACK'  | translate }}</button>
+            </mat-grid-tile>
+            <mat-grid-tile 
+                colspan="2"
+                rowspan="1">
+            <button mat-raised-button (click)="onCloseWithSave($event)" color="accent">{{ 'PAGES.SETTINGS.CLOSE_SAVE'  | translate }}</button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

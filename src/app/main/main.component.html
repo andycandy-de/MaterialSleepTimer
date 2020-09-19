@@ -1,0 +1,30 @@
+<mat-grid-list cols="4" rowHeight="50px">
+    <mat-grid-tile 
+        colspan="3"
+        rowspan="3">
+        <app-timer-circle
+            class="clickable"
+            size="150"
+            color="primary"
+            [active]="model.active"
+            [countdownTime]="model.countdownTime"
+            [endTime]="model.endTime"
+            [currentTime]="model.remainingTime"
+            (click)="onEdit($event)"
+            ></app-timer-circle>
+    </mat-grid-tile>
+    <mat-grid-tile 
+        colspan="1"
+        rowspan="1">
+    </mat-grid-tile>
+    <mat-grid-tile
+        colspan="1"
+        rowspan="1">
+        <button mat-raised-button (click)="onStartPause($event)" color="primary">{{ model.active ? ('PAGES.MAIN.PAUSE' | translate) : ('PAGES.MAIN.START' | translate) }}</button>
+    </mat-grid-tile>
+    <mat-grid-tile
+        colspan="1"
+        rowspan="1">
+        <button mat-raised-button (click)="onStop($event)" color="accent">{{ 'PAGES.MAIN.STOP' | translate }}</button>
+    </mat-grid-tile>
+</mat-grid-list>

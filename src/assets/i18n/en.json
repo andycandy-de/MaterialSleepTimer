@@ -1,0 +1,34 @@
+{
+  "PAGES": {
+    "EDIT": {
+      "BACK": "BACK",
+      "START": "START"
+    },
+    "MAIN": {
+      "PAUSE": "PAUSE",
+      "START": "START",
+      "STOP": "STOP"
+    },
+    "OVERLAY": {
+      "SLEEP": "SLEEP",
+      "STOP": "STOP"
+    },
+    "SETTINGS": {
+      "SHUTDOWN_COMMAND": "Shutdown command",
+      "DEFAULT_COUNTDOWN_TIME": "Default countdown time",
+      "OVERLAY_TIME": "Overlay time",
+      "OVERLAY_PLUS_TIME_1": "Overlay plus time 1",
+      "OVERLAY_PLUS_TIME_2": "Overlay plus time 2",
+      "EDIT_COUNTDOWN_TIME_1": "Preselect countdown time 1",
+      "EDIT_COUNTDOWN_TIME_2": "Preselect countdown time 2",
+      "EDIT_COUNTDOWN_TIME_3": "Preselect countdown time 3",
+      "EDIT_COUNTDOWN_TIME_4": "Preselect countdown time 4",
+      "EDIT_SLIDER_MIN": "Slider min time",
+      "EDIT_SLIDER_MAX": "Slider max time",
+      "EDIT_SLIDER_STEP": "Slider step time",
+      "RESET": "RESET",
+      "CLOSE_BACK": "CLOSE WITHOUT SAVE",
+      "CLOSE_SAVE": "CLOSE WITH SAVE"
+    }
+  }
+}
