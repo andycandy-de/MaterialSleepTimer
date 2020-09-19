@@ -17,3 +17,12 @@ psshutdown.exe -d -t 0
 This was not possible with the windows 'shutdown' program.
 
 > This program is tested with windows
+
+## Simple UI
+
+![mts_main](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_main.png)
+![mts_main_running](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mts_main_running.png)
+![mst_edit](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_edit.png)
+![mst_settings](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_settings.png)
+![mst_overlay_01](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_overlay_01.png)
+![mst_overlay_02](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_overlay_02.png)
