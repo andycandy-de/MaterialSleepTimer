@@ -20,9 +20,26 @@ This was not possible with the windows 'shutdown' program.
 
 ## Simple UI
 
+The UI is clean and simple. 
+
 ![mts_main](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_main.png)
-![mts_main_running](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mts_main_running.png)
+
+The countdown timer and the circle visualize the remaining time.
+
+![mst_main_running](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_main_running.png)
+
+A simple edit page to change the countdown time.
+
 ![mst_edit](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_edit.png)
+
+With the settings page the shutdown command can be changed. It's also possible to change various default values.
+
 ![mst_settings](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_settings.png)
+
+If the overlay time is reached the overlay is shown.
+
 ![mst_overlay_01](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_overlay_01.png)
+
+The overlay shows simple control elements to extend the countdown, to stop the countdown or to immediately shutdown.
+
 ![mst_overlay_02](https://raw.githubusercontent.com/andycandy-de/MaterialSleepTimer/master/readmeAssets/mst_overlay_02.png)
